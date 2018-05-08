@@ -22,6 +22,10 @@ for(let i = 0; i < squares.length; i++){ // put listeners on every button
 	})
 }
 
+document.getElementById("new-game").addEventListener('click', function(event){
+	startNewGame();
+});
+
 function markSquare(clickedSquare){
 
 	if(gameOver == false){
@@ -66,7 +70,12 @@ function checkWin(whoJustMarked, playerSquares){
 			}
 		}
 	}
+}
 
-
-
+function startNewGame(){
+	gameOver = false;
+	for(let i = 0; i < squares.length; i++){
+		squares[i].innerHTML = '-'
+	}
+	document.getElementsByClassName('winning-square').className -= ' winning-square';
 }
