@@ -10,7 +10,23 @@
 	width: 185px;
 	height: 185px;
 	font-size: 60px;
-	/*border-width: 0px, 0px, 0px, 0px; doesnt work*/
+	margin-left: -4px;
+}
+
+.top-square{
+	border-top: none;
+}
+
+.left-square{
+	border-left: none;
+}
+
+.right-square{
+	border-right: none;
+}
+
+.bottom-square{
+	border-bottom: none;
 }
 
 .square:hover{
@@ -28,6 +44,7 @@
 }
 
 #new-game{
-	margin-top: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 

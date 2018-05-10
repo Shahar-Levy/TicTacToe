@@ -74,8 +74,16 @@ function checkWin(whoJustMarked, playerSquares){
 
 function startNewGame(){
 	gameOver = false;
+	whosTurn = 1;
+	player1Squares = []; 
+	player2Squares = []; 
 	for(let i = 0; i < squares.length; i++){
-		squares[i].innerHTML = '-'
+		squares[i].innerHTML = '-';
+		squares[i].className = 'square'; // way 1
 	}
-	document.getElementsByClassName('winning-square').className -= ' winning-square';
+
+	let currentClasses = document.getElementsByClassName('winning-square').className;
+//		element.className.removeClass('winning-square') // way 2
+	console.log(currentClasses)
+
 }
