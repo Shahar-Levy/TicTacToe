@@ -1,3 +1,7 @@
+#body{
+	background-color: #c9c9ff;
+}
+
 #board{
 	max-width: 640px;
 	min-width: 320px;
@@ -5,32 +9,16 @@
 }
 
 .square{
-	background-color: #fff;
-	border: 3px solid #000;
+	background-color: white;
+	border: 3px solid #c9c9ff;
 	width: 185px;
 	height: 185px;
 	font-size: 60px;
 	margin-left: -4px;
 }
 
-.top-square{
-	border-top: none;
-}
-
-.left-square{
-	border-left: none;
-}
-
-.right-square{
-	border-right: none;
-}
-
-.bottom-square{
-	border-bottom: none;
-}
-
 .square:hover{
-	background-color: #ff0;
+	background-color: #529a86;
 }
 
 #message{
@@ -39,8 +27,7 @@
 }
 
 .winning-square{
-	background-color: red !important;
-	color: #0000FF;
+	background-color: #529a86 !important;
 }
 
 #new-game{
@@ -48,3 +35,6 @@
 	margin-bottom: 20px;
 }
 
+.disable-hover{
+	pointer-events: none !important;
+}

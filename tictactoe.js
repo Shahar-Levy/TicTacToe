@@ -78,11 +78,6 @@ function startNewGame(){
 	player2Squares = []; 
 	for(let i = 0; i < squares.length; i++){
 		squares[i].innerHTML = '-';
-		squares[i].className = 'square'; // way 1
+		squares[i].className = 'square';
 	}
-
-	let currentClasses = document.getElementsByClassName('winning-square').className;
-//		element.className.removeClass('winning-square') // way 2
-	console.log(currentClasses)
-
 }
