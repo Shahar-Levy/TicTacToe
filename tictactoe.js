@@ -1,4 +1,3 @@
-
 let whosTurn = 1;
 let gameOver = false;
 const messageDiv = document.getElementById('message');
