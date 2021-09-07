@@ -2,7 +2,7 @@ let http = require('http');
 let fs = require('fs');
 
 function loadHTML(){
-	let HTML = fs.readFileSync('./tictactoe.html');
+	let HTML = fs.readFileSync('./index.html');
 	return HTML;
 }
 function loadCSS(){
